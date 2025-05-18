@@ -1,7 +1,15 @@
 Object = require("libraries.classic")
 
-Test = Object:extend()
+local Circle = Object:extend()
 
-function Test:new() end
-function Test:update(dt) end
-function Test:draw() end
+function Circle:new(x, y, radius)
+	self.x = x
+	self.y = y
+	self.radius = radius
+	self.creation_time = love.timer.getDelta()
+end
+
+function Circle:update(dt) end
+function Circle:draw() end
+
+return Circle

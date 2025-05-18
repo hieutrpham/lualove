@@ -1,6 +1,8 @@
 {
     "diagnostics.globals": [
         "image",
-        "test_instance"
+        "test_instance",
+        "circle",
+        "self"
     ]
 }
